@@ -7,3 +7,4 @@ RUN chown -R portage:portage /usr/portage
 RUN echo "masters = gentoo" > /usr/portage/metadata/layout.conf
 RUN emerge-webrsync
 RUN emerge app-portage/eix app-portage/gentoolkit
+RUN eix-update
